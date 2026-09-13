@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initEmailCopy();
   initMobileNav();
   initScrollNav();
+  initScrollReveal();
 });
 
 /* ==========================================================================
@@ -257,7 +258,7 @@ function initEmailCopy() {
 }
 
 /* ==========================================================================
-   5. MOBILE NAVIGATION DRAWER
+   5. ANIMATED MOBILE NAVIGATION DRAWER
    ========================================================================== */
 function initMobileNav() {
   const toggle = document.getElementById('mobile-toggle');
@@ -266,29 +267,121 @@ function initMobileNav() {
 
   if (!toggle || !menu) return;
 
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('open');
+  // Stagger animation indexes for child links
+  links.forEach((link, idx) => {
+    link.style.setProperty('--i', idx + 1);
   });
 
+  function openDrawer() {
+    menu.classList.add('open');
+    toggle.classList.add('active');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('no-scroll');
+  }
+
+  function closeDrawer() {
+    menu.classList.remove('open');
+    toggle.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('no-scroll');
+  }
+
+  // Toggle button with morphing animation
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = menu.classList.contains('open');
+    if (isOpen) {
+      closeDrawer();
+    } else {
+      openDrawer();
+    }
+  });
+
+  // Close smoothly on any nav link click
   links.forEach((link) => {
     link.addEventListener('click', () => {
-      menu.classList.remove('open');
+      closeDrawer();
+    });
+  });
+
+  // Close on outside click with smooth transition
+  document.addEventListener('click', (e) => {
+    if (menu.classList.contains('open') && !menu.contains(e.target) && !toggle.contains(e.target)) {
+      closeDrawer();
+    }
+  });
+
+  // Close on Escape key press
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('open')) {
+      closeDrawer();
+    }
+  });
+}
+
+/* ==========================================================================
+   6. SCROLL NAVBAR SHADOW & ACTIVE SECTION HIGHLIGHT
+   ========================================================================== */
+function initScrollNav() {
+  const navbar = document.querySelector('.navbar-wrapper');
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-menu .nav-link');
+
+  if (!navbar) return;
+
+  window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY;
+
+    // Navbar shadow elevation
+    if (scrollPos > 30) {
+      navbar.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+      navbar.style.background = 'rgba(6, 9, 17, 0.92)';
+    } else {
+      navbar.style.boxShadow = 'none';
+      navbar.style.background = 'rgba(6, 9, 17, 0.75)';
+    }
+
+    // ScrollSpy active link indicator
+    sections.forEach((section) => {
+      const top = section.offsetTop - 120;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+
+      if (scrollPos >= top && scrollPos < top + height) {
+        navLinks.forEach((link) => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          }
+        });
+      }
     });
   });
 }
 
 /* ==========================================================================
-   6. SCROLL NAVBAR SHADOW & ACTIVE HIGHLIGHT
+   7. SCROLL REVEAL ANIMATIONS
    ========================================================================== */
-function initScrollNav() {
-  const navbar = document.querySelector('.navbar-wrapper');
-  if (!navbar) return;
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll(
+    '.cp-card, .skill-category-card, .project-card, .about-text-col, .about-card-col, .contact-method-card, .stat-box'
+  );
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-      navbar.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.4)';
-    } else {
-      navbar.style.boxShadow = 'none';
-    }
+  revealElements.forEach((el) => {
+    el.classList.add('reveal');
   });
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: '0px 0px -30px 0px' }
+  );
+
+  revealElements.forEach((el) => observer.observe(el));
 }
