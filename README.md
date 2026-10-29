@@ -12,7 +12,7 @@
 <img align="right" alt="Coding GIF" width="380" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/thoughtworks-gif_dribbble.gif" />
 
 <p align="left">
-  <img src="https://komarev.com/ghpvc/?username=gyanendrasingh2005&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=gyanendrasingh2005&label=Profile%20Views&color=00e5ff&style=for-the-badge" alt="Profile views" />
 </p>
 
 <p align="left">
@@ -27,12 +27,13 @@
   </a>
 </p>
 
+- 🌐 **Live Website:** [gyanendrasingh.me](https://gyanendrasingh.me)
 - 🔭 **Specialization:** High-performance Full-Stack Systems, Real-Time WebSockets & Distributed Backends
 - 💡 **Problem Solving:** **1,400+ Algorithmic Challenges Solved** across LeetCode, Codeforces, and GeeksforGeeks
 - 🏆 **Competitive Ratings:** **LeetCode 1875+ Rating** (Top 5%) & **Codeforces Pupil (1221 Rating)**
 - 🎓 **Education:** Pursuing B.Tech in Information Technology (2023 - 2027) at **KIET Group of Institutions**
 - 🌟 **Leadership:** President at **KIET Koders Korner (K3)** — Mentored 50+ students across 10+ DSA workshops
-- 📫 **Reach Me:** [gyanendra2005gs@gmail.com](mailto:gyanendra2005gs@gmail.com) | [gyanendrasingh.me](https://gyanendrasingh.me)
+- 📫 **Reach Me:** [gyanendra2005gs@gmail.com](mailto:gyanendra2005gs@gmail.com)
 
 <br clear="right" />
 
@@ -66,34 +67,9 @@
 ## 💻 Tech Stack & Engineering Toolkit
 
 <p align="center">
-  <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
-  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS" />
-  <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express" />
-  <img src="https://img.shields.io/badge/mongodb-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/postgresql-%23336791.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/prisma-%2359c6d2.svg?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" />
-  <img src="https://img.shields.io/badge/cloudinary-%23ff5722.svg?style=for-the-badge&logo=cloudinary&logoColor=white" alt="Cloudinary" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/websocket-010101?style=for-the-badge&logo=socket.io&logoColor=white" alt="WebSockets" />
-  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=cpp,c,js,ts,python,html,css,tailwind,react,nextjs,nodejs,express,mongodb,postgres,prisma,docker,redis,postman,git,github" alt="Tech Stack Skills" />
+  </a>
 </p>
 
 ---
@@ -123,32 +99,22 @@
 
 ---
 
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=gyanendrasingh2005&theme=radical&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies" />
-</p>
-
----
-
-## 📈 GitHub Activity & Stats
+## 📈 GitHub Activity & Detailed Performance
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gyanendrasingh2005&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gyanendrasingh2005&theme=tokyonight" alt="GitHub Profile Summary" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=gyanendrasingh2005&theme=tokyonight&show_icons=true&hide_border=false&count_private=true" alt="GitHub Stats" />
   <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gyanendrasingh2005&theme=dark&hide_border=false" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gyanendrasingh2005&theme=tokyonight&hide_border=false" alt="GitHub Streak" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gyanendrasingh2005&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=gyanendrasingh2005&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages" />
 </div>
 
 ---
 
 <p align="center">
-  <a href="https://visitcount.itsvg.in">
-    <img src="https://visitcount.itsvg.in/api?id=gyanendrasingh2005&icon=0&color=0" alt="Visitor Counter" />
-  </a>
-</p>
-
-<p align="center">
-  <sub>⚡ Designed & Crafted for Gyanendra Singh • Built with Intent</sub>
+  <sub>⚡ Designed &amp; Crafted for Gyanendra Singh • Built with Intent</sub>
 </p>
