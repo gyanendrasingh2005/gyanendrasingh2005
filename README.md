@@ -106,8 +106,6 @@
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=gyanendrasingh2005&theme=tokyonight&show_icons=true&hide_border=false&count_private=true" alt="GitHub Stats" />
-  <br/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=gyanendrasingh2005&theme=tokyonight&hide_border=false" alt="GitHub Streak" />
   <br/>
   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=gyanendrasingh2005&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages" />
